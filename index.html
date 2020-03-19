@@ -156,102 +156,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.23581321.xyz/2020/03/19/%E7%AE%97%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/duck.jpg">
-      <meta itemprop="name" content="God Huang">
-      <meta itemprop="description" content="329hero RUSH!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="329Hero">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/19/%E7%AE%97%E6%B3%95/" class="post-title-link" itemprop="url">算法</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-03-19 11:42:48 / 修改时间：11:44:05" itemprop="dateCreated datePublished" datetime="2020-03-19T11:42:48+08:00">2020-03-19</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>数据结构与算法—常用三大排序算法<br>1:冒泡排序</p>
-<p>冒泡排序是的算法思路是将最小数值放在下标为0的位置，将最大值放在mao.length-1的位置<br>外层for循环开始计算层数，即mao.length-1为目标计划循环次数，当外层for完成一次后，总长度就会-1，也就是说最大值已经出来了并且放在了最后一位，那么在之后的循环中就不算这一项了，以此类推。<br>内层for循环从下标0开始，和下一角标比较，这里用第一项和第二项代表，如果第一项&gt;第二项，那么两个就互换，否侧不换，然后第二项和第三项比较。直到完成这一次循环。<br>// 简单排序–冒泡排序<br>        int[] mao = { 120, 110, 100, 90, 80, 70, 45 };<br>        // 外循环只是循环几次<br>        for (int i = mao.length - 1; i &gt; 1; i–) {<br>            // 内循环每循环一次就会有拍好一位，如最大值<br>            System.out.println(“第” + (mao.length - i) + “次循环”);<br>            for (int j = 0; j &lt; i; j++) {<br>                if (mao[j] &gt; mao[j + 1]) {<br>                    // 如果第一个比第二大，那就换位子<br>                    int temp = mao[j];<br>                    mao[j] = mao[j + 1];<br>                    mao[j + 1] = temp;<br>                }<br>                for (int k = 0; k &lt; mao.length; k++) {<br>                    System.out.print(mao[k] + “ , “);<br>                }<br>                System.out.println();<br>            }</p>
-<pre><code>}</code></pre><p>第1次循环<br>110 , 120 , 100 , 90 , 80 , 70 , 45 ,<br>110 , 100 , 120 , 90 , 80 , 70 , 45 ,<br>110 , 100 , 90 , 120 , 80 , 70 , 45 ,<br>110 , 100 , 90 , 80 , 120 , 70 , 45 ,<br>110 , 100 , 90 , 80 , 70 , 120 , 45 ,<br>110 , 100 , 90 , 80 , 70 , 45 , 120 ,<br>第2次循环<br>100 , 110 , 90 , 80 , 70 , 45 , 120 ,<br>100 , 90 , 110 , 80 , 70 , 45 , 120 ,<br>100 , 90 , 80 , 110 , 70 , 45 , 120 ,<br>100 , 90 , 80 , 70 , 110 , 45 , 120 ,<br>100 , 90 , 80 , 70 , 45 , 110 , 120 ,<br>第3次循环<br>90 , 100 , 80 , 70 , 45 , 110 , 120 ,<br>90 , 80 , 100 , 70 , 45 , 110 , 120 ,<br>90 , 80 , 70 , 100 , 45 , 110 , 120 ,<br>90 , 80 , 70 , 45 , 100 , 110 , 120 ,<br>第4次循环<br>80 , 90 , 70 , 45 , 100 , 110 , 120 ,<br>80 , 70 , 90 , 45 , 100 , 110 , 120 ,<br>80 , 70 , 45 , 90 , 100 , 110 , 120 ,<br>第5次循环<br>70 , 80 , 45 , 90 , 100 , 110 , 120 ,<br>70 , 45 , 80 , 90 , 100 , 110 , 120 ,<br>第6次循环<br>45 , 70 , 80 , 90 , 100 , 110 , 120 , </p>
-<p>算法不变性<br>这里可以看出当比较到最后一次时，只剩下前两个比较了，也就是说在最右边一旦完成比较后就不会再进行任何比较操作，当然每个排序的不变性是不一样的。<br>冒泡排序的效率<br>在上面的例子结果中可以看出，7条数据的情况下，第一趟循环比较了6次，第二次比较了5次…，最后一次比较一次，公式为<br>（N-1）+(N-2)+(N-3)+…+1===N*(N-1)/==2====<br>比较算法结果：<br>学过高数的人都知道，数学中有叫趋向于某某某的说法，咱们的算法比较结果就是趋向于==N²/2==<br>。因为在N很大的情况下，N-1与N可以都看做为N，就算-1，-2也影响不大。<br>交换算法结果<br>由于在比较时不一定要交换，那么交换次数肯定是小于比较次数，有点的是从头到位都需要交换（逆向排序），则有的一次都不用换（已经排序好的），所以，这里排序算法取平均==N²/4==.<br>大O表示法<br>由于常数不算在表示法中，所以结果为O（N²）时间。<br>在平常的代码中，如果那你看到双重for循环时，基本就可以判断运行时间效果为O（N²）了。<br>2：选择排序</p>
-<p>// 选择排序<br>        System.out.println(“选择排序”);</p>
-<pre><code>int[] selectInt = { 120, 110, 100, 90, 80, 70, 45 };
-/**
- * 第一步： 原理是都和第一项（下标0）比较，小的则替换
- * 
- * 外层变量设置为outer，内层变量为inner，最小数据存放下标min。
- * selectInt.length-1一共7个数比6次就可以了。selectInt.length内部是从下标1开始的，这里就不要再-1了，
- * 否侧少比较一次
- */
-int min;
-for (int outer = 0; outer &lt; selectInt.length - 1; outer++) {
-    min = outer;
-    // 内循环每循环一次就会有拍好一位，如最大值
-    System.out.println(&quot;第&quot; + (outer + 1) + &quot;次循环&quot;);
-    for (int inner = outer + 1; inner &lt; selectInt.length; inner++) {
-        // 如果后六个数中，有小于第一项（下标0）的，就调换下标
-        if (selectInt[inner] &lt; selectInt[min]) {
-            min = inner;
-        }
-    }
-    int temp = selectInt[outer];
-    selectInt[outer] = selectInt[min];
-    selectInt[min] = temp;
-
-    for (int k = 0; k &lt; selectInt.length; k++) {
-        System.out.print(selectInt[k] + &quot; , &quot;);
-    }
-    System.out.println();
-}
-/**
- * 第1次循环 45 , 110 , 100 , 90 , 80 , 70 , 120 ,
- * 
- */</code></pre><p>第1次循环<br>45 , 110 , 100 , 90 , 80 , 70 , 120 ,<br>第2次循环<br>45 , 70 , 100 , 90 , 80 , 110 , 120 ,<br>第3次循环<br>45 , 70 , 80 , 90 , 100 , 110 , 120 ,<br>第4次循环<br>45 , 70 , 80 , 90 , 100 , 110 , 120 ,<br>第5次循环<br>45 , 70 , 80 , 90 , 100 , 110 , 120 ,<br>第6次循环<br>45 , 70 , 80 , 90 , 100 , 110 , 120 ,<br>选择排序算法不变性<br>下标小于等于outer的位置的数据总是有序的，一旦放在前面后，就不会再动。<br>选择排序算法效率<br>上面结果可以说明，虽然也是比较了和冒泡一样多的次数，但是交换缺少了很多。所以时间为N²/2<br>比较次数和交换次数<br>比较次数：N²/2<br>交换次数：最多N-1,最少0次，取平均N/2<br>大O表示法<br>O（N²）<br>以上可看出选择排序是比冒泡排序快点的。<br>3:插入排序<br>概念:有一个已经有序的数据序列，要求在这个已经排好的数据序列中插入一个数，但要求插入后此数据序列仍然有序，这个时候就要用到一种新的排序方法——插入排序法,插入排序的基本操作就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，时间复杂度为O(n^2)<br>/**<br>         * 从第二项开始，第一项默认为有序<br>         * 1：把第二项数据暂存，和第一项比较，如果第一项&gt;第二项则调换，<br>         * 2：把第三项数据暂存，和第二项比较，如果第二项&gt;第三项则调换， 这时调换后的第二项还要和第一项比较，然后再判断调换，从当前下标开始向左遍历凡是大于temp的数据，下标<br>         * 都均向右移动一位（调换）。<br>         * 以此类推 ……..<br>         *<br>         *<br>         * 很多人估计不理解为什么从第二项开始，而不是从第一项，<br>         * 这里我稍微做一下解释，插入排序就是将一个数据插入到已经排好序的有序数据中，从而得到一个新的、个数加一的有序数据，算法适用于少量数据的排序，<br>         * 我们对于一个数组，不知道哪里是排序好的，可能是前三条，也可能不是有序的，我们这时就要假设一段已经排好序的数组，我们直接取前三项的话，<br>         * 不一定是排序好的， 我们取前一项的话，就一个数据肯定是排序好的，所以就从第二项开始，默认第一项已经排序好了。这就是由来。<br>         */<br>        int insertElems[] = { 23, 4, 5, 34, 56, 21 };<br>        int inner, outer;<br>        for (outer = 1; outer &lt; insertElems.length; outer++) {<br>            int temp = insertElems[outer];// 把第二项暂存<br>            inner = outer;<br>            // (第一项&gt;第二项)<br>            while (inner &gt; 0 &amp;&amp; insertElems[inner - 1] &gt; temp) {<br>                insertElems[inner] = insertElems[inner - 1];<br>                inner–;<br>            }<br>            insertElems[inner] = temp;<br>            for (int k = 0; k &lt; insertElems.length; k++) {<br>                System.out.print(insertElems[k] + “ , “);<br>            }<br>            System.out.println();</p>
-<pre><code>}</code></pre><p>4 , 23 , 5 , 34 , 56 , 21 ,<br>4 , 5 , 23 , 34 , 56 , 21 ,<br>4 , 5 , 23 , 34 , 56 , 21 ,<br>4 , 5 , 23 , 34 , 56 , 21 ,<br>4 , 5 , 21 , 23 , 34 , 56 ,<br>插入排序的不变性<br>在每趟结束时，在temp位置插入后，比outer下标小（左边）的数据项都是有序的。<br>结论:插入排序比冒泡快一倍，优于选择排序</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://www.23581321.xyz/2020/03/15/%E8%87%AA%E8%BF%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -283,7 +187,7 @@ for (int outer = 0; outer &lt; selectInt.length - 1; outer++) {
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-17 18:19:04" itemprop="dateModified" datetime="2020-03-17T18:19:04+08:00">2020-03-17</time>
+                <time title="修改时间：2020-03-19 12:22:23" itemprop="dateModified" datetime="2020-03-19T12:22:23+08:00">2020-03-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -306,16 +210,14 @@ for (int outer = 0; outer &lt; selectInt.length - 1; outer++) {
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="自述"><a href="#自述" class="headerlink" title="自述"></a>自述</h1><h2 id="响亮的口号"><a href="#响亮的口号" class="headerlink" title="响亮的口号"></a>响亮的口号</h2><h3 id="来加入我们啊"><a href="#来加入我们啊" class="headerlink" title="来加入我们啊"></a>来加入我们啊</h3><p><strong>这是我们的时代！  这是变换的年代！  打倒疫情  向前冲锋<br>期待开学那一天  329hero RUSH!</strong></p>
+          <h1 id="自述"><a href="#自述" class="headerlink" title="自述"></a>自述</h1><h2 id="响亮的口号"><a href="#响亮的口号" class="headerlink" title="响亮的口号"></a>响亮的口号</h2><h3 id="来加入我们啊"><a href="#来加入我们啊" class="headerlink" title="来加入我们啊"></a>来加入我们啊</h3><p><strong>这是我们的时代！  这是变换的年代！  打倒疫情  向前冲锋<br>期待开学那一天  329hero RUSH!</strong><br>/* </p>
 <ul>
 <li>列表1</li>
 <li>列表2<br>  a 子列表</li>
-<li>列表3</li>
+<li>列表3 </li>
 </ul>
-<hr>
-<hr>
-<p> a <a href="https://www.tencent.com/en-us/index.html" target="_blank" rel="noopener">腾讯</a></p>
-<p><img src="/images/%E5%89%91%E6%9D%A5.jpg" alt="江湖岁月"></p>
+<h2 id=""><a href="#" class="headerlink" title="*/"></a>*/</h2><hr>
+<p> a <a href="https://www.tencent.com/en-us/index.html" target="_blank" rel="noopener">腾讯</a><br> b<a href="本文链接：https://blog.csdn.net/weixin_41190227/article/details/86600821">十大经典算法排序</a><br><img src="/images/%E5%89%91%E6%9D%A5.jpg" alt="江湖岁月"></p>
 <p><em>字体是斜线的哦</em><br><strong>字体加粗哦</strong><br><code>&lt;html&gt;&lt;/html&gt;</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;title&gt;我是实验品呢&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line"></span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -405,7 +307,7 @@ for (int outer = 0; outer &lt; selectInt.length - 1; outer++) {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
