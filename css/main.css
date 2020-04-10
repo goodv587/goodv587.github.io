@@ -1170,7 +1170,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #cf63c8;
+  background: #604655;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2024,13 +2024,6 @@ pre .javascript .function {
 .followme .social-list .social-link .label {
   display: block;
   font-size: 14px;
-}
-.post-body p a {
-  color: #345;
-  border-bottom: none;
-}
-.post-body p a:hover {
-  color: #00f;
 }
 .category-all-page .category-all-title {
   text-align: center;
