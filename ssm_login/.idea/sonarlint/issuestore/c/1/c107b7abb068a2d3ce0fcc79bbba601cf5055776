@@ -1,0 +1,9 @@
+
+>	Web:S1827V")Remove this deprecated "align" attribute.(‚³è§
+]Web:DoctypePresenceCheck	":Insert a <!DOCTYPE> declaration to before this <html> tag.(€÷ğ=
+C	Web:S1827]")Remove this deprecated "align" attribute.(îƒğÉüÿÿÿÿ
+GWeb:ImgWithoutAltCheckf"%Add an "alt" attribute to this image.(»äÛì
+MWeb:TableWithoutCaptionCheckQ" Add a description to this table.(¿‰˜ÿÿÿÿÿ
+C	Web:S1827c")Remove this deprecated "align" attribute.(¯Í×Ãûÿÿÿÿ
+?	Web:S5256Q"%Add "<th>" headers to this "<table>".(¿‰˜ÿÿÿÿÿ
+T	Web:S5254	"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(€÷ğ=

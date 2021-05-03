@@ -1,0 +1,14 @@
+
+8squid:S1643?"Use a StringBuilder instead.(¥«­©ûÿÿÿÿ
+Qsquid:S1191"5Use classes from the Java API instead of Sun classes.(ö¤•Ûúÿÿÿÿ
+”squid:S1598"}This file "CheckCodeServlet.java" should be located in "svlt" directory, not in "E:\IDEAPro\ssm_login\src\main\webapp\style".(êœìµ
+hsquid:UselessImportCheck"ERemove this unused import 'sun.awt.image.codec.JPEGImageEncoderImpl'.(ƒ×Áa
+nsquid:UselessImportCheck"ERemove this unused import 'com.sun.image.codec.jpeg.JPEGEncodeParam'.(Şô§ıÿÿÿÿ
+Nsquid:S1135!"2Complete the task associated to this TODO comment.(ƒŠ® úÿÿÿÿ
+Vsquid:S1161'":Add the "@Override" annotation above this method signature(Ïû©Öûÿÿÿÿ
+4squid:S2119/"Save and re-use this "Random".(¼İÅf
+Jsquid:S1989K".Add a "try/catch" block for "getOutputStream".(—ü¨Ãıÿÿÿÿ
+4squid:S2119T"Save and re-use this "Random".(¼İÅf
+Qsquid:S1161^":Add the "@Override" annotation above this method signature(‹¨¯¿
+Nsquid:S1135_"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+bsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(£Úı…

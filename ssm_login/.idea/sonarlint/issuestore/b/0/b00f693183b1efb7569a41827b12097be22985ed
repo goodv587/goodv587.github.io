@@ -1,0 +1,13 @@
+
+Fsquid:S1125?"(Remove the literal "true" boolean value.(è‘Ò°8İÍ£ÿ°.
+_squid:UselessImportCheck";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô
+Zsquid:S3752.">Add a "method" parameter to this "@RequestMapping" annotation.(»”ú§üÿÿÿÿ
+asquid:S44889"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(€¦Ÿ¼
+csquid:UselessImportCheck"3Remove this unused import 'cn.itcast.pojo.Message'.(˜òŠùÿÿÿÿ8©¾§ş°.
+rsquid:S00100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¡¯Îıÿÿÿÿ8ìªş°.
+[
+squid:S106="9Replace this use of System.out or System.err by a logger.(Òˆ¯Éúÿÿÿÿ8õ…Äş°.
+Zsquid:S3752">Add a "method" parameter to this "@RequestMapping" annotation.(‚ûã‡üÿÿÿÿ
+csquid:S00112;"FDefine and throw a dedicated exception instead of using a generic one.(¸¡¯Îıÿÿÿÿ
+Zsquid:S3752$">Add a "method" parameter to this "@RequestMapping" annotation.(¸ı£Àùÿÿÿÿ
+lsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ôÄ…Š8¾ïş°.
