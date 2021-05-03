@@ -1,0 +1,83 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font-family:微软雅黑;
+	font-size:12px;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	color:red;
+}
+
+.input1{
+	border:1px solid #ccc;
+	border-radius: 3px;
+	height:28px;
+	width:160px;
+	padding-left:5px;
+}
+
+.input1:focus, .textarea:focus{
+	background-color:#E8E8E8;
+}
+
+.button1{
+	height:30px;
+	width:90px;
+	border-style:none;
+	border-radius:2px;
+	background-color:#98B05D;
+	color:#fff;
+	font-weight:bold;
+}
+
+.button1:active{
+	height:28px;
+	width:88px;
+}
+
+.button2{
+	height:30px;
+	width:90px;
+	border-style:none;
+	border-radius:2px;
+	background-color:#fff;
+	color:#fff;
+	font-weight:bold;
+}
+ul{
+	list-style:none;
+}
+
+table{
+	border-collapse:collapse;
+	border:1px solid #eee;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.left{
+	text-align:left;
+}
+
+.center{
+	text-align:center;
+}
+
+.gray{
+	color:gray;
+}
+
+.textarea{
+	border:1px solid #ccc;
+	border-radius: 3px;
+}

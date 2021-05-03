@@ -1,0 +1,21 @@
+
+HWeb:ImgWithoutAltCheckÃ"%Add an "alt" attribute to this image.(¶ç±£
+OWeb:AvoidCommentedOutCodeCheck¿"Remove this commented out code.(‡Íöûÿÿÿÿ
+IWeb:TableWithoutCaptionCheck¹" Add a description to this table.(è›Í—
+?	Web:S1827¾")Remove this deprecated "width" attribute.(¥¸ı
+RWeb:UnsupportedTagsInHtml5Check²"&Remove this deprecated "font" element.(ï¸Ä¹
+D	Web:S1827»")Remove this deprecated "width" attribute.(Ü¹Óøÿÿÿÿ
+RWeb:UnsupportedTagsInHtml5Check¯"&Remove this deprecated "font" element.(‹–À€
+D	Web:S1827½")Remove this deprecated "align" attribute.(”é—ıÿÿÿÿ
+?	Web:S1827¾")Remove this deprecated "align" attribute.(¥¸ı
+m Web:TableHeaderHasIdOrScopeCheck¼";Add either an 'id' or a 'scope' attribute to this <th> tag.(­ïµØúÿÿÿÿ
+QWeb:UnsupportedTagsInHtml5Check°"&Remove this deprecated "font" element.(¤óä[
+WWeb:UnsupportedTagsInHtml5Check±"&Remove this deprecated "font" element.(ÚÒ¦óşÿÿÿÿ
+E	Web:S1827¹"/Remove this deprecated "cellspacing" attribute.(è›Í—
+m Web:TableHeaderHasIdOrScopeCheck»";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ü¹Óøÿÿÿÿ
+D	Web:S1827¼")Remove this deprecated "width" attribute.(­ïµØúÿÿÿÿ
+Z	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
+D	Web:S1827½")Remove this deprecated "width" attribute.(”é—ıÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheck½";Add either an 'id' or a 'scope' attribute to this <th> tag.(”é—ıÿÿÿÿ
+h Web:TableHeaderHasIdOrScopeCheck¾";Add either an 'id' or a 'scope' attribute to this <th> tag.(¥¸ı
+E	Web:S1827¹"/Remove this deprecated "cellpadding" attribute.(è›Í—
