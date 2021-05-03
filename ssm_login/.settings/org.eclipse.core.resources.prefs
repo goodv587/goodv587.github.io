@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/java/cn/itcast/controller/UserController.java=UTF-8
+encoding//src/main/java/cn/itcast/dao/MessDao.java=UTF-8
+encoding//src/main/java/cn/itcast/dao/UserDao.java=UTF-8
+encoding//src/main/java/cn/itcast/service/ServiceDao.java=UTF-8
+encoding//src/main/java/cn/itcast/service/impl/ServiceDaoImpl.java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding/<project>=UTF-8
